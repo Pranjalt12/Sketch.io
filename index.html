@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button id="pen-btn">Pen</button>
+            <button id="eraser-btn">Eraser</button>
+            <div class="color-picker-container">
+                <input type="color" id="color-picker" value="#000000">
+            </div>
+            <div class="size-slider-container">
+                <label for="size-slider">Brush Size</label>
+                <input type="range" id="size-slider" min="1" max="10" value="5">
+            </div>
+            <button id="clear-btn">Clear</button>
+        </div>
+        <canvas id="drawing-canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
